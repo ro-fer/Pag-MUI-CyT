@@ -1,0 +1,42 @@
+[
+<<<<<<< Updated upstream
+    {
+      "nombre": "Recurso N1",
+      "link": "http://ejemplo.com/recurso1",
+      "descripcion": "Aca esta la recurso-descripcion del Recurso 1.",
+      "categorias": ["Matematica", "Fisica"]
+    },
+    {
+      "nombre": "Recurso N2",
+      "link": "http://ejemplo.com/recurso2",
+      "descripcion": "Aca esta la recurso-descripcion del Recurso 2.",
+      "categorias": ["Libros"]
+    },
+    {
+      "nombre": "Recurso N3",
+      "link": "http://ejemplo.com/recurso2",
+      "descripcion": "Aca esta la recurso-descripcion del Recurso 2.",
+      "categorias": ["Matematica"]
+    }
+  ]
+=======
+  {
+    "nombre": "Recurso N1",
+    "link": "http://ejemplo.com/recurso1",
+    "descripcion": "Aca esta la recurso-descripcion del Recurso 1.",
+    "categorias": ["Matematica", "Fisica"]
+  },
+  {
+    "nombre": "Recurso N2",
+    "link": "http://ejemplo.com/recurso2",
+    "descripcion": "Aca esta la recurso-descripcion del Recurso 2.",
+    "categorias": ["Libros"]
+  },
+  {
+    "nombre": "Recurso N3",
+    "link": "http://ejemplo.com/recurso2",
+    "descripcion": "Aca esta la recurso-descripcion del Recurso 2.",
+    "categorias": ["Matematica"]
+  }
+]
+>>>>>>> Stashed changes
