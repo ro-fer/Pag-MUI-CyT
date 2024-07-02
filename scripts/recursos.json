@@ -1,21 +1,27 @@
 [
   {
-    "nombre": "Recurso N1",
-    "link": "http://ejemplo.com/recurso1",
-    "descripcion": "Aca esta la recurso-descripcion del Recurso 1.",
-    "categorias": ["Matematica", "Fisica"]
-  },
-  {
-    "nombre": "Recurso N2",
-    "link": "http://ejemplo.com/recurso2",
-    "descripcion": "Aca esta la recurso-descripcion del Recurso 2.",
-    "categorias": ["Libros"]
-  },
-  {
-    "nombre": "Recurso N3",
-    "link": "http://ejemplo.com/recurso2",
-    "descripcion": "Aca esta la recurso-descripcion del Recurso 2.",
+    "nombre": "Symbolab",
+    "link": "https://es.symbolab.com/",
+    "descripcion": "Calculadora paso a paso",
     "categorias": ["Matematica"]
+  },
+  {
+    "nombre": "Diego Melchiori",
+    "link": "https://www.youtube.com/@diegomelchiori1998",
+    "descripcion": "Este es el canal del docente Diego Merchiori, donde tiene subido los vídeos de las clases de pandemia de Matemática - CPU.",
+    "categorias": ["Matematica"]
+  },
+  {
+    "nombre": "Frubox",
+    "link": "http://www.frubox.org/",
+    "descripcion": "Es un banco de apuntes colaborativo entre estudiantes! Hay apuntes, ejercicios, examenes. El objetivo es ir subiendo material actualizado.",
+    "categorias": ["Matematica","Libros","Física"]
+  },
+  {
+    "nombre": "Diego Lamas",
+    "link": "https://www.youtube.com/channel/UCxEX6-03xq2rj0riS3EXdBQ",
+    "descripcion": "Este es el canal del docente Diego Lamas, donde tiene subido los vídeos de las clases de pandemia de Física - CPU",
+    "categorias": ["Física"]
   }
 ]
 
