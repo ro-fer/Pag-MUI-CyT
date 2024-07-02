@@ -22,6 +22,30 @@
     "link": "https://www.youtube.com/channel/UCxEX6-03xq2rj0riS3EXdBQ",
     "descripcion": "Este es el canal del docente Diego Lamas, donde tiene subido los vídeos de las clases de pandemia de Física - CPU",
     "categorias": ["Física"]
+  },
+  {
+    "nombre": "Luis López - Montenegro",
+    "link": "https://lelopezm.wordpress.com/",
+    "descripcion": "Página web de profesor uis López - Montenegro (Colombiano), tiene material de diferentes materias.",
+    "categorias": ["Matematica","Física","Programación"]
+  },
+  {
+    "nombre": "Apuntes de Majo",
+    "link": "https://losapuntesdemajo.vercel.app/",
+    "descripcion": "Página web  que contiene apuntes sobre Programación. [JavaScript, Python, SQL]",
+    "categorias": ["Programación"]
+  },
+  {
+    "nombre": "Python UNSAM",
+    "link": "https://github.com/python-unsam/Programacion_en_Python_UNSAM",
+    "descripcion": "Curso de programación en Python de la UNSAM.",
+    "categorias": ["Programación","Cursos"]
+  },
+  {
+    "nombre": "Libros Programación",
+    "link": "https://github.com/EbookFoundation/free-programming-books/blob/main/books/free-programming-books-es.md#ensamblador",
+    "descripcion": "Curso de programación en Python de la UNSAM.",
+    "categorias": ["Programación","Libros"]
   }
 ]
 
