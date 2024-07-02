@@ -1,6 +1,6 @@
 async function cargarRecursos(categoria) {
   try {
-    console.log('Categoría:', categoria);
+    //console.log('Categoría:', categoria);
 
     // Ejemplo de fetch y procesamiento de recursos
     const response = await fetch("../scripts/recursos.json"); // Ruta relativa desde la raíz del servidor
@@ -11,7 +11,7 @@ async function cargarRecursos(categoria) {
 
     // Filtrar recursos por categoría
     const filteredResources = resources.filter(resource => resource.categorias.includes(categoria));
-    console.log('Recursos filtrados:', filteredResources);
+    //console.log('Recursos filtrados:', filteredResources);
 
     // Insertar las tarjetas de recursos filtrados en el contenedor
     filteredResources.forEach(resource => {
