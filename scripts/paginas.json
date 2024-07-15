@@ -1,0 +1,16 @@
+[
+    {
+        "nombre": "Campus",
+        "link" :"https://campusvirtualecyt.unsam.edu.ar/login/index.php",
+        "descripcion": "Plataforma donde se encuentra el material de cursada.", 
+        "img":"../resours/moodle-logo.png"
+
+    },
+    {
+        "nombre": "Campus",
+        "link" :"https://campusvirtualecyt.unsam.edu.ar/login/index.php",
+        "descripcion": "Plataforma donde se encuentra el material de cursada.", 
+        "img":"../resours/moodle-logo.png"
+
+    }
+]
