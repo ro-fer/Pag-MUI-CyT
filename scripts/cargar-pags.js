@@ -1,13 +1,16 @@
 async function cargarRecursos() {
   try {
+    console.log('Intentando cargar recursos...');
     const response = await fetch("scripts/paginas.json"); // Ruta relativa o absoluta según tu configuración
     if (!response.ok) {
       throw new Error('Failed to fetch paginas.json');
     }
+    console.log('Recursos cargados exitosamente.');
     const resources = await response.json();
 
     // Insertar cada recurso en el contenedor
     resources.forEach(resource => {
+      console.log('Insertando recurso:', resource);
       insertCard(resource);
     });
   } catch (error) {
@@ -38,10 +41,17 @@ function createCard(resource) {
 
 function insertCard(resource) {
   const container = document.getElementById('container-pag');
-  const card = createCard(resource);
-  container.appendChild(card);
+  if (container) {
+    const card = createCard(resource);
+    container.appendChild(card);
+    console.log('Recurso insertado:', resource);
+  } else {
+    console.error('No se encontró el contenedor con el ID container-pag');
+  }
 }
 
 // Llamar a cargarRecursos cuando la página se haya cargado
-document.addEventListener('DOMContentLoaded', cargarRecursos);
-
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('Documento cargado. Iniciando carga de recursos...');
+  cargarRecursos();
+});
