@@ -41,7 +41,4 @@ async function cargarPags() {
     const card = createCard(resource);
     container.appendChild(card);
   }
-  
-  // Llamar a cargarRecursos cuando la página se haya cargado
-  document.addEventListener('DOMContentLoaded', cargaPags);
-  
+
