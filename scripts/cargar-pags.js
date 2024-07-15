@@ -1,4 +1,4 @@
-async function cargarRecursos() {
+async function cargarPags() {
     try {
       // Fetch y procesamiento de recursos
       const response = await fetch("../scripts/paginas.json"); // Ruta relativa desde la raíz del servidor
@@ -43,5 +43,5 @@ async function cargarRecursos() {
   }
   
   // Llamar a cargarRecursos cuando la página se haya cargado
-  document.addEventListener('DOMContentLoaded', cargarRecursos);
+  document.addEventListener('DOMContentLoaded', cargaPags);
   
