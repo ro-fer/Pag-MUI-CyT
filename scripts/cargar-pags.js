@@ -1,7 +1,7 @@
 async function cargarRecursos() {
     try {
       // Fetch y procesamiento de recursos
-      const response = await fetch("../scripts/paginas.json"); // Ruta relativa desde la raíz del servidor
+      const response = await fetch("./scripts/paginas.json"); // Ruta relativa desde la raíz del servidor
       if (!response.ok) {
         throw new Error('Failed to fetch paginas.json');
       }
@@ -18,7 +18,7 @@ async function cargarRecursos() {
   async function cargarPAGES() {
     try {
       // Fetch y procesamiento de recursos
-      const response = await fetch("../scripts/paginas-recursos.json"); // Ruta relativa desde la raíz del servidor
+      const response = await fetch("./scripts/paginas-recursos.json"); // Ruta relativa desde la raíz del servidor
       if (!response.ok) {
         throw new Error('Failed to fetch paginas.json');
       }
