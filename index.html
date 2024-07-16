@@ -6,20 +6,39 @@
     <title>Apoyo MUI - CyT </title>
     <link rel="icon" href="./resours/imagenes/MUI-logo.jpg">
     <link rel="stylesheet" href="./styles/estilos.css" />
+    <link rel="stylesheet" href="../styles/estilos-recursos.css">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
   </head>
   <body>
-    <header>
-        <h1 id="title">Apoyo MUI  CyT</h1>
-        <nav>
-            <div><a href="#" target="_blank">Páginas</a></div>
-            <div><a href="#" target="_blank">Recursos</a></div>
-            <div><a href="#" target="_blank">Contacto</a></div>
-        </nav>
-    </header>
+    <nav class="navbar">
+      <div>
+        <img src="./resours/mui-logo.png" alt="Logo-MUI"  class="logo" >
+      </div>
+      <div class="title">
+        <h2>Apoyo</h2>
+        <h2 >CyT</h2>
+      </div>
+      <ul class="nav-links">
+        <div class="menu">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="#">Páginas</a></li>
+          <li class="recursos">
+            <a href="/">Recursos</a>
+            <ul class="dropdown">
+              <li><a href="./pages/matematica.html">Matemática</a></li>
+              <li><a href="./pages/fisica.html">Física</a></li>
+              <li><a href="./pages/cursos.html">Cursos</a></li>
+              <li><a href="./pages/inteligencia-artificial.html">Inteligencia Artificial</a></li>
+              <li><a href="./pages/libros.html">Libros</a></li>
+            </ul>
+          </li> 
+          <li><a href="#">Contacto</a></li>
+        </div>
+      </ul>
+    </nav>
     <div class="espaciado"></div>
     <main>
       <section id="Páginas">
@@ -31,6 +50,9 @@
       <hr>
       <section id="Recursos">
         <h2>Recursos</h2>
+        <div class="container-pag" id="container-recursos">
+          
+        </div>
       </section>
     </main>
     <footer>
@@ -49,6 +71,6 @@
         </div>
       </div>
     </footer>
-    <script src="./scripts/cargar-pags.js"></script>
+    <script src="../scripts/cargar-pags.js"></script>
   </body>
 </html>

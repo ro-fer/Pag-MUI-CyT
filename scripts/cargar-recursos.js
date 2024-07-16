@@ -3,7 +3,7 @@ async function cargarRecursos(categoria) {
     //console.log('Categoría:', categoria);
 
     // Ejemplo de fetch y procesamiento de recursos
-    const response = await fetch("scripts/recursos.json"); // Ruta relativa desde la raíz del servidor
+    const response = await fetch("../scripts/recursos.json"); // Ruta relativa desde la raíz del servidor
     if (!response.ok) {
       throw new Error('Failed to fetch recursos.json');
     }
