@@ -1,7 +1,7 @@
 async function cargarRecursos(categoria) {
   try {
     // Cargar datos de categorías
-    const categoriasResponse = await fetch("../scripts/categorias.json");
+    const categoriasResponse = await fetch("../scripts/categorias_pages.json");
     if (!categoriasResponse.ok) {
       throw new Error("Failed to fetch categorias.json");
     }

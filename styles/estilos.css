@@ -1,4 +1,4 @@
-html {
+* {
   font-family: sans-serif;
 }
 
@@ -84,7 +84,6 @@ ul {
   border-radius: 8px;
   top: 35px;
   right: 0; /* Align the dropdown to the right */
-  z-index: 1000;
 }
 
 .dropdown-item {
@@ -101,7 +100,10 @@ ul {
 .show-dropdown {
   display: block;
 }
-
+a{
+  text-decoration: none;
+  color:black;
+}
 a:visited {
   color: white;
 }
@@ -126,13 +128,6 @@ h2 {
   align-items: center;
   gap: 0.5em;
 }
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: auto;
-}
-
 .espaciado {
   margin-bottom: 20px;
 }
@@ -149,4 +144,50 @@ footer {
 
 .git-hub {
   margin-top: 10px;
+}
+.img-pag{
+  width: 90%;
+}
+.container{
+  border: #000000 solid 2px;
+  padding: 4%;
+  height: 160px;
+  display: grid;
+  grid-template-rows:  0.1fr 0.5fr;
+  grid-template-columns: 1fr 1fr; 
+  margin: 0;
+}
+.img{
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 2;
+  margin-top: 25%;
+  margin-bottom: 50%;
+}
+.titulo{
+  text-align: center;
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 2;
+  grid-column-end: 3;
+  
+}
+.titulo h4{
+  margin: 5%;
+}
+.descripcion {
+  text-align: center; 
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 3;
+  
+}
+.dropbtn{
+  background: transparent;
+  border: transparent;
+  color: white;
+  font-size: 100%;
+  cursor: pointer;
 }

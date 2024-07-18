@@ -1,8 +1,8 @@
 {
-  "Matematica": "https://ro-fer.github.io/Pag-MUI-CyT/pages/matematica.html",
-  "Libros": "https://ro-fer.github.io/Pag-MUI-CyT/pages/libros.html",
-  "Física": "https://ro-fer.github.io/Pag-MUI-CyT/pages/fisica.html",
-  "Programación": "https://ro-fer.github.io/Pag-MUI-CyT/pages/programacion.html",
-  "Inteligencia Artificial": "https://ro-fer.github.io/Pag-MUI-CyT/pages/inteligencia-artificial.html",
-  "Cursos": "https://ro-fer.github.io/Pag-MUI-CyT/pages/cursos.html"
+  "Matematica": "./pages/matematica.html",
+  "Libros": "./Pag-MUI-CyT/pages/libros.html",
+  "Física": "./pages/fisica.html",
+  "Programación": "./pages/programacion.html",
+  "Inteligencia Artificial": "./pages/inteligencia-artificial.html",
+  "Cursos": "./pages/cursos.html"
 }
