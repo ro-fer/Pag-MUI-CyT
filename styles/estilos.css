@@ -1,4 +1,4 @@
-html {
+* {
   font-family: sans-serif;
 }
 
@@ -9,6 +9,8 @@ html {
   background-image: linear-gradient(to top, #c00000, #bb1e09, #d5641d, #dd5026, #e7724e);
   color: #fff;
   padding: 10px 20px;
+  position: relative;
+  z-index: 1000;
 }
 
 .navbar-container {
@@ -33,10 +35,12 @@ ul {
   color: #fff;
   text-decoration: none;
 }
-.logo-title{
+
+.logo-title {
   display: flex;
-  gap: 100%;
+  gap: 1em;
 }
+
 .logo {
   height: 25px;
 }
@@ -48,7 +52,7 @@ ul {
 
 .title h2 {
   margin: 0;
-  background:transparent;
+  background: transparent;
 }
 
 .menu-icon {
@@ -69,6 +73,7 @@ ul {
 
 .recursos {
   position: relative;
+  display: inline-block;
 }
 
 .dropdown {
@@ -78,30 +83,29 @@ ul {
   display: none;
   border-radius: 8px;
   top: 35px;
+  right: 0; /* Align the dropdown to the right */
 }
 
-.dropdown li + li {
-  margin-top: 10px;
-}
-
-.dropdown li {
+.dropdown-item {
+  color: white;
+  text-decoration: none;
+  display: block;
   padding: 0.5em 1em;
-  width: 8em;
-  text-align: center;
 }
 
-.dropdown li:hover {
-  background-color: #570d0d;
+.dropdown-item:hover {
+  background-color: #7a1818;
 }
 
-.recursos:hover .dropdown {
+.show-dropdown {
   display: block;
 }
 
 a:visited {
   color: white;
 }
-.link-pag:visited{
+
+.link-pag:visited {
   color: #000000;
 }
 
@@ -179,8 +183,14 @@ a {
   color: #000000;
   text-decoration: none;
 }
-
-
+.dropbtn{
+  border: transparent;
+  background: transparent;
+  color: white;
+  font-family: sans-serif;
+  font-size: 100%;
+  cursor: pointer;
+}
 /* Responsive Styles */
 @media (max-width: 768px) {
   .nav-links {
@@ -188,28 +198,39 @@ a {
       display: none;
       width: 100%;
   }
-  .title h2{
-    background:transparent;
+
+  .title h2 {
+    background: transparent;
   }
+
   .nav-links li {
       text-align: center;
       padding: 10px 0;
   }
-  
+
   .menu-icon {
       display: block;
       margin: 3%;
   }
-  .menu-icon p{
+
+  .menu-icon p {
     margin: 0;
-    
   }
-  
+
   .nav-links.show {
       display: flex;
   }
-  .logo-title{
+
+  .logo-title {
     display: inline;
     gap: 0;
   }
+}
+
+.text-footer {
+  color: #000000;
+}
+
+.text-footer:visited {
+  color: #000000;
 }
