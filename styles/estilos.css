@@ -1,4 +1,4 @@
-* {
+html {
   font-family: sans-serif;
 }
 
@@ -84,6 +84,7 @@ ul {
   border-radius: 8px;
   top: 35px;
   right: 0; /* Align the dropdown to the right */
+  z-index: 1000;
 }
 
 .dropdown-item {
@@ -129,108 +130,23 @@ h2 {
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 100%;
-  grid-template-areas:
-      "img titulo ."
-      "img descripcion ."
-      ". . .";
-  border: #000105 solid 1px;
-  max-width: 300px;
-  border-radius: 25px;
-  margin-left: 5%;
-  margin-bottom: 5%;
+  height: auto;
 }
 
-.img {
-  grid-area: img;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10%;
+.espaciado {
+  margin-bottom: 20px;
 }
 
-.img-pag {
-  width: 100%;
-}
-
-.titulo {
-  grid-area: titulo;
-  text-align: center;
-  margin-top: 10%;
-  margin-bottom: 0;
-}
-
-.descripcion {
-  grid-area: descripcion;
-  text-align: center;
-  margin-left: 5%;
-  margin-top: -20%;
-  padding-bottom: -50%;
-}
-
-.link-pag:hover {
-  border-radius: 10px;
-  font-size: 130%;
-}
-
-.titulo a:hover {
+footer {
+  padding: 20px;
   background-color: #570d0d;
-  border-radius: 5px;
   color: white;
-}
-
-a {
-  color: #000000;
-  text-decoration: none;
-}
-.dropbtn{
-  border: transparent;
-  background: transparent;
-  color: white;
-  font-family: sans-serif;
-  font-size: 100%;
-  cursor: pointer;
-}
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .nav-links {
-      flex-direction: column;
-      display: none;
-      width: 100%;
-  }
-
-  .title h2 {
-    background: transparent;
-  }
-
-  .nav-links li {
-      text-align: center;
-      padding: 10px 0;
-  }
-
-  .menu-icon {
-      display: block;
-      margin: 3%;
-  }
-
-  .menu-icon p {
-    margin: 0;
-  }
-
-  .nav-links.show {
-      display: flex;
-  }
-
-  .logo-title {
-    display: inline;
-    gap: 0;
-  }
 }
 
 .text-footer {
-  color: #000000;
+  color: white;
 }
 
-.text-footer:visited {
-  color: #000000;
+.git-hub {
+  margin-top: 10px;
 }
