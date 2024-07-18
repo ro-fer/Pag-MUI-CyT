@@ -10,28 +10,26 @@
   </head>
   <body>
     <nav class="navbar">
-      <div>
-        <img src="../resours/mui-logo.png" alt="Logo-MUI"  class="logo" >
+      <div class="navbar-container">
+          <div class="logo-title">
+              <img src="../resours/mui-logo.png" alt="Logo-MUI" class="logo">
+              <div class="title">
+                  <h2>Apoyo</h2>
+                  <h2>CyT</h2>
+              </div>
+          </div>
+          <div class="menu-icon" id="menu-icon"><p>&#9733;</p>
+          </div>
+          <ul class="nav-links" id="nav-links">
+              <li><a href="./index.html">Inicio</a></li>
+              <li><a href="#">Páginas</a></li>
+              <li class="recursos" id="recursos">
+                <a href="/">Recursos</a>
+              </li> 
+              <li><a href="#">Contacto</a></li>
+          </ul>
       </div>
-      <h2 id="title">Apoyo - CyT</h2>
-      <ul class="nav-links">
-        <div class="menu">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="#">Páginas</a></li>
-          <li class="recursos">
-            <a href="/">Recursos</a>
-            <ul class="dropdown">
-              <li><a href="../pages/matematica.html">Matemática</a></li>
-              <li><a href="../pages/fisica.html">Física</a></li>
-              <li><a href="../pages/cursos.html">Cursos</a></li>
-              <li><a href="../pages/inteligencia-artificial.html">Inteligencia Artificial</a></li>
-              <li><a href="../pages/libros.html">Libros</a></li>
-            </ul>
-          </li> 
-          <li><a href="#">Contacto</a></li>
-        </div>
-      </ul>
-    </nav>
+  </nav>
     <div class="espaciado"></div>
     <main>
         <div class="box-titulo-recurso">
@@ -58,7 +56,8 @@
         </div>
       </div>
     </footer>
-  <script src="../scripts/cargar-recursos.js"></script>
+    <script src="../scripts/menu.js"></script>
+    <script src="../scripts/cargar-recursos.js"></script>
   <script>
     // Llama a la función con la categoría como argumento
     cargarRecursos('Cursos');

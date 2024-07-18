@@ -1,76 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apoyo MUI - CyT </title>
+    <title>Apoyo MUI - CyT</title>
     <link rel="icon" href="./resours/imagenes/MUI-logo.jpg">
     <link rel="stylesheet" href="styles/estilos.css" />
     <link rel="stylesheet" href="styles/estilos-recursos.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
     <nav class="navbar">
-      <div>
-        <img src="./resours/mui-logo.png" alt="Logo-MUI"  class="logo" >
-      </div>
-      <div class="title">
-        <h2>Apoyo</h2>
-        <h2 >CyT</h2>
-      </div>
-      <ul class="nav-links">
-        <div class="menu">
-          <li><a href="./index.html">Inicio</a></li>
-          <li><a href="#">Páginas</a></li>
-          <li class="recursos">
-            <a href="/">Recursos</a>
-            <ul class="dropdown">
-              <li><a href="./pages/matematica.html">Matemática</a></li>
-              <li><a href="./pages/fisica.html">Física</a></li>
-              <li><a href="./pages/cursos.html">Cursos</a></li>
-              <li><a href="./pages/inteligencia-artificial.html">Inteligencia Artificial</a></li>
-              <li><a href="./pages/libros.html">Libros</a></li>
+        <div class="navbar-container">
+            <div class="logo-title">
+                <img src="./resours/mui-logo.png" alt="Logo-MUI" class="logo">
+                <div class="title">
+                    <h2>Apoyo</h2>
+                    <h2>CyT</h2>
+                </div>
+            </div>
+            <div class="menu-icon" id="menu-icon"><p>&#9733;</p>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="#">Páginas</a></li>
+                <li class="recursos" id="recursos">
+                  <a href="/">Recursos</a>
+                </li> 
+                <li><a href="#">Contacto</a></li>
             </ul>
-          </li> 
-          <li><a href="#">Contacto</a></li>
         </div>
-      </ul>
     </nav>
     <div class="espaciado"></div>
     <main>
-      <section id="Páginas">
-        <h2>Páginas</h2>
-        <div class="container-pag" id="container-pag">
-        <!-- Los recursos serán cargados aquí por JavaScript -->
-        </div>
-      </section>
-      <hr>
-      <section id="Recursos">
-        <h2>Recursos</h2>
-        <div class="container-pag" id="container-recursos">
-          
-        </div>
-      </section>
+        <section id="Páginas">
+            <h2>Páginas</h2>
+            <div class="container-pag" id="container-pag">
+                <!-- Los recursos serán cargados aquí por JavaScript -->
+            </div>
+        </section>
+        <hr>
+        <section id="Recursos">
+            <h2>Recursos</h2>
+            <div class="container-pag" id="container-recursos">
+                <!-- Los recursos serán cargados aquí por JavaScript -->
+            </div>
+        </section>
     </main>
     <footer>
-      <hr>
-      <div>
-        <p>
-          Copyright Todos los derechos reservados:
-          <div>
-            <a href="./index.html">
-              <strong class="text-footer">Página Web Recursos - 2024</strong>
-            </a>
-          </div>
-        </p>
-        <div class="git-hub">
-          <p>Diseñado por : <a class="text-footer" href="https://github.com/ro-fer" target="_blank">Roh Fernandez</a></p>
+        <hr>
+        <div>
+            <p>
+                Copyright Todos los derechos reservados:
+                <div>
+                    <a href="./index.html">
+                        <strong class="text-footer">Página Web Recursos - 2024</strong>
+                    </a>
+                </div>
+            </p>
+            <div class="git-hub">
+                <p>Diseñado por : <a class="text-footer" href="https://github.com/ro-fer" target="_blank">Roh Fernandez</a></p>
+            </div>
         </div>
-      </div>
     </footer>
     <script src="scripts/cargar-pags.js"></script>
-  </body>
+    <script src="scripts/menu.js"></script>
+</body>
 </html>

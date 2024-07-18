@@ -1,6 +1,6 @@
 .recursos-section{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(150px, 200px));
     align-items: auto;
 }
 .recurso{
@@ -13,6 +13,7 @@
 .recurso-title{
     text-align: center;
     font-weight: bold;
+    color: black;
 }
 .recurso-descripcion{
     margin-right: 1%;
@@ -38,9 +39,11 @@
     border-radius: 5px;
 }
 .categorias{
+    margin: 3%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fill,minmax(50px, 80px));
     align-items: auto;
+    gap: 2%;
 }
 .categoria{
 
@@ -48,9 +51,14 @@
     text-align: center;
     border: none;
     cursor: pointer;
-    background-color: #b17575;
+    background-color: #6d3e3e;
     border-radius: 5px;
+    width: 100%;
     margin: 1%;
+    color: white;
+}
+.categoria a{
+    color: white;
 }
 .box-titulo-recurso{
     background-color:black;
@@ -58,4 +66,7 @@
 .titulo-recurso{
     text-align: center;
     color: white;
+}
+.recurso-boton a{
+    color:white;
 }
