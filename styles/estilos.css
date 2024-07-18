@@ -33,9 +33,12 @@ ul {
   color: #fff;
   text-decoration: none;
 }
-
+.logo-title{
+  display: flex;
+  gap: 100%;
+}
 .logo {
-  width: 50px;
+  height: 25px;
 }
 
 .title {
@@ -45,6 +48,7 @@ ul {
 
 .title h2 {
   margin: 0;
+  background:transparent;
 }
 
 .menu-icon {
@@ -203,5 +207,9 @@ a {
   
   .nav-links.show {
       display: flex;
+  }
+  .logo-title{
+    display: inline;
+    gap: 0;
   }
 }
