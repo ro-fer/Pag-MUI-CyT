@@ -46,6 +46,60 @@
     "link": "https://github.com/EbookFoundation/free-programming-books/blob/main/books/free-programming-books-es.md#ensamblador",
     "descripcion": "Curso de programación en Python de la UNSAM.",
     "categorias": ["Programación","Libros"]
+  },
+  {
+    "nombre": "Videos ejs Parciales",
+    "link": "https://drive.google.com/drive/folders/1NT49br0ColmSDnfzGmr-8yfoEfVxbNjx?usp=sharing",
+    "descripcion": "Videos de ejercicios de parciales de Matematica CPU",
+    "categorias": ["Matematica"]
+  },
+  {
+    "nombre": "Videos ejs Parciales",
+    "link": "https://www.youtube.com/playlist?list=PLawnKsGNt0WE8jz2pJF11ju4SVkvGFini",
+    "descripcion": "Videos de ejercicios de parciales de Física CPU",
+    "categorias": ["Física"]
+  },
+  {
+    "nombre": "El traductor de la Ingeniería",
+    "link": "https://www.youtube.com/channel/UCa6V1UVOXN4wDm7RDQDoa6g",
+    "descripcion": "Videos interesantes de varias temáticas que estan relacionadas con la ingeniería.",
+    "categorias": ["Física","Matematica"]
+  },
+  {
+    "nombre": "MateFacil",
+    "link": "https://www.youtube.com/@MateFacilYT",
+    "descripcion": "Videos de diferentes temas sobre matemática, útil para diversas materias de las carreras de ECyT.",
+    "categorias": ["Física","Matematica"]
+  },
+  {
+    "nombre": "Algebra para Todos",
+    "link": "https://www.youtube.com/channel/UCJn2HLDDyjyRQqEpOetaKBw",
+    "descripcion": "Videos de diferentes temas sobre matemática (álgebra), útil para diversas materias de las carreras de ECyT.",
+    "categorias": ["Física","Matematica"]
+  },
+  {
+    "nombre": "Derivando",
+    "link": "https://www.youtube.com/channel/UCH-Z8ya93m7_RD02WsCSZYA",
+    "descripcion": "Videos de diferentes temas sobre matemática (álgebra), útil para diversas materias de las carreras de ECyT.",
+    "categorias": ["Física","Matematica"]
+  },
+  {
+    "nombre": "Matemáticas profe Alex",
+    "link": "https://www.youtube.com/@MatematicasprofeAlex",
+    "descripcion": "Videos de diferentes temas sobre matemática, útil para diversas materias de las carreras de ECyT.",
+    "categorias": ["Física","Matematica"]
+  },
+  {
+    "nombre": "Física en segundos",
+    "link": "https://www.youtube.com/@FISICAENSEGUNDOS",
+    "descripcion": "Videos de diferentes temas sobre matemática y física, útil para diversas materias de las carreras de ECyT.",
+    "categorias": ["Física","Matematica"]
+  },
+  {
+    "nombre": "Química y algo más",
+    "link": "https://www.youtube.com/@quimicayalgomas2200",
+    "descripcion": "Videos de diferentes temáticas, útil para diversas materias de las carreras de ECyT.",
+    "categorias": ["Física","Matematica"]
   }
 ]
 
