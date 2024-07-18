@@ -37,6 +37,21 @@ ul {
   color: #fff;
   text-decoration: none;
 }
+a{
+  text-decoration: none;
+}
+.titulo a:hover{
+  background-color: #570d0d;
+  border-radius: 15%;
+  color: white;
+  font-size: 120%;
+  box-shadow: 10px -5px 173px 1px rgba(201,18,18,1) inset;
+  -webkit-box-shadow: 10px -5px 173px 1px rgba(201,18,18,1) inset;
+  -moz-box-shadow: 10px -5px 173px 1px rgba(201,18,18,1) inset;
+  transition: all 0.2s ease;
+  
+  margin: 5%;
+}
 
 .logo-title {
   display: flex;
