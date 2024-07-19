@@ -100,6 +100,55 @@
     "link": "https://www.youtube.com/@quimicayalgomas2200",
     "descripcion": "Videos de diferentes temáticas, útil para diversas materias de las carreras de ECyT.",
     "categorias": ["Física","Matematica"]
+  },
+  {
+    "nombre": "Clementina",
+    "link": "https://clementina.org.ar/",
+    "descripcion": "Web con contenidos sobre software libre. Tienen un catalogo colaborativo de webs y herramientas open source.",
+    "categorias": ["Programación"]
+  },
+  {
+    "nombre": "Roadmap.sh",
+    "link": "https://roadmap.sh/",
+    "descripcion": "Web para aprender lenguajes de programación gratuitamente.",
+    "categorias": ["Programación"]
+  },
+  {
+    "nombre": "Chat PDF",
+    "link": "https://www.chatpdf.com",
+    "descripcion": "IA que permite subir archivos pdf y preguntarle cosas sobre el documento.",
+    "categorias": ["I-A"]
+  },
+  {
+    "nombre": "Beautiful.ai",
+    "link": "https://www.beautiful.ai/education",
+    "descripcion": "Web que tiene una IA que crea presentaciones de power point con input o entrenandola con un pdf u otro archivo de texto.",
+    "categorias": ["I-A"]
+  },
+  {
+    "nombre": "Free Code Camp",
+    "link": "https://www.freecodecamp.org/espanol/",
+    "descripcion": "Web para aprender gratis lenguajes de programación.",
+    "categorias": ["I-A"]
+  },
+  {
+    "nombre": "Geeks for Geeks",
+    "link": "https://www.geeksforgeeks.org/",
+    "descripcion": "Web de tutoriales, cursos, noticias, etc, sobre programación.",
+    "categorias": ["Cursos","Programación"]
+  },
+  {
+    "nombre": "Inprogrammer",
+    "link": "https://www.geeksforgeeks.org/",
+    "descripcion": "Web con ebooks, cursos y proyectos de programación.",
+    "categorias": ["Cursos","Programación"]
+  },
+  {
+    "nombre": "Tutoriales de prorgamación ya",
+    "link": "https://www.tutorialesprogramacionya.com/",
+    "descripcion": "Tutoriales sobre programación.",
+    "categorias": ["Cursos","Programación"]
   }
 ]
+
 
