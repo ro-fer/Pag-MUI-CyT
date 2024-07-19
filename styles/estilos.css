@@ -245,3 +245,23 @@ i{
               0 0 75px  #118d18,
               0 0 115px  #118d18;
 }
+.formulario-seccion{
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  gap: 1em;
+}
+.formulario{
+  background-color: #b13333;
+  border: #000000 solid 2px;
+  height: 150px;
+}
+.formulario-titulo{
+  text-align: center;
+  color: rgba(255, 255, 255, 100%);
+}
+.formulario-subtitulo{
+  font-size: 90%;
+  font-style: italic;
+  color: rgba(255, 255, 255, 80%);
+
+}
