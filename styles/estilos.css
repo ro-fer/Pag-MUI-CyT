@@ -3,6 +3,7 @@
 }
 html{
   scroll-behavior: smooth;
+  
 }
 .navbar {
   display: flex;
@@ -11,8 +12,10 @@ html{
   background-image: linear-gradient(to top, #c00000, #bb1e09, #d5641d, #dd5026, #e7724e);
   color: #fff;
   padding: 10px 20px;
-  position: relative;
+  position: fixed;
   z-index: 1000;
+  width: 95%;
+
 }
 
 .navbar-container {
@@ -94,7 +97,7 @@ a{
 }
 
 .dropdown {
-  background-color: #570d0d;
+  background-color: #7e2424;
   padding: 1em 0;
   position: absolute;
   display: none;
@@ -111,8 +114,13 @@ a{
 }
 
 .dropdown-item:hover {
-  background-color: #7a1818;
+  background-color: #4e0606;
 }
+.dropdown-separator {
+  border-top: 2px solid #fff;
+  margin: 2px 10px 3px;
+}
+
 
 .show-dropdown {
   display: block;
@@ -132,8 +140,9 @@ a:visited {
 footer {
   text-align: center;
   margin-top: 5%;
+  
+  
 }
-
 h2 {
   background-image: radial-gradient(circle, #a40000, #7f0015, #570819, #2f0d15, #000000);
   color: white;
@@ -245,23 +254,104 @@ i{
               0 0 75px  #118d18,
               0 0 115px  #118d18;
 }
+main , footer{
+  position: relative;
+  top: 60px;
+}
+.main-nuevo{
+  background: rgb(253,29,29);
+  background: radial-gradient(circle, rgba(253,29,29,0.4990371148459384) 46%, rgba(240,140,0,0.5) 100%);
+  padding-bottom: 5%;
+}
 .formulario-seccion{
-  display: grid;
-  grid-template-columns: 0.5fr 1fr 0.5fr;
-  gap: 1em;
+  display: flex;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+
 }
 .formulario{
-  background-color: #b13333;
   border: #000000 solid 2px;
-  height: 150px;
+  width: 100%;
+  border-radius: 50px;
+  padding-top: 2%;
+  background-color: white;
 }
 .formulario-titulo{
-  text-align: center;
-  color: rgba(255, 255, 255, 100%);
+  
+  margin: 2%;
 }
 .formulario-subtitulo{
   font-size: 90%;
   font-style: italic;
-  color: rgba(255, 255, 255, 80%);
+  
 
+}
+.contenido-formulario{
+  padding-left: 10%;
+  padding-right: 10%;
+  
+}
+
+input,textarea{
+  margin: 0;
+  width: 100%;
+  min-height: 2em;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+}
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #570d0d;
+  color:white;  
+  min-width: 300px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.div-cat{
+  margin-bottom: 4%;
+}
+
+input[type="checkbox"]  {
+  width: auto;
+  margin: 1px 10px;
+  display: inline-block;
+  position: relative;
+  top:8px;
+  left: 5px;
+  cursor: pointer;
+ 
+}
+
+.cat-box{
+  font-size: 80%;
+}
+.checkbox-categoria{
+  border-bottom: rgb(0, 0, 0) solid 1.5px;
+  padding: 1%;
+}
+label span{ 
+  color: rgb(85, 85, 85);
+  cursor: pointer;
+}
+label input:checked + span{ color: #000000; }
+
+#cb_validation:empty{ display: none; }
+#cb_validation{ background: pink; color: darkred; padding: 6px 10px; margin: 10px  0 0 0; display:block; }
+
+
+.obligatorio{
+  color: red;
+  font-size: 150%;
+}
+
+.div-recursos{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 250px));
+  justify-content: stretch;
 }

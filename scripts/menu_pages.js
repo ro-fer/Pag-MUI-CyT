@@ -48,10 +48,13 @@ function agregarContenidoExtra(data) {
 
     for (const categoria in data) {
         if (data.hasOwnProperty(categoria)) {
+            if(categoria=='Todos' ){
+                contenidoHTML += '<li class="dropdown-separator"></li>';
+            }
             contenidoHTML += `<li><a class="dropdown-item" href="${data[categoria]}" target="_blank">${categoria}</a></li>`;
         }
     }
-
+    
     dropdown.innerHTML = contenidoHTML;
 }
 

@@ -15,9 +15,11 @@ async function cargarRecursos(categoria) {
     const resources = await response.json();
 
     // Filtrar recursos por categoría
-    const filteredResources = resources.filter((resource) =>
-      resource.categorias.includes(categoria)
-    );
+    const filteredResources = categoria === 'Todos'
+      ? resources
+      : resources.filter((resource) =>
+          resource.categorias.includes(categoria)
+        );
 
     // Crear e insertar tarjetas de recursos
     const container = document.getElementById("recursos-container");
@@ -61,11 +63,27 @@ function createCard(resource, categoriasData) {
   return divCard;
 }
 
-function insertCard(resource, categoriasData) {
-  const container = document.getElementById('recursos-container');
-  const card = createCard(resource, categoriasData);
-  container.appendChild(card);
+// Función para manejar el clic en "Agregar Archivo"
+function agregarArchivo() {
+  alert('Funcionalidad de agregar archivo en desarrollo.');
 }
 
-// Llamada inicial para cargar recursos, ejemplo de uso:
-// cargarRecursos('categoria1');
+// Manejo del menú desplegable
+document.addEventListener("DOMContentLoaded", function() {
+  const recursosBtn = document.getElementById('recursos-btn');
+  const dropdown = document.getElementById('dropdown');
+
+  recursosBtn.addEventListener('click', function(event) {
+    event.stopPropagation();
+    dropdown.classList.toggle('show');
+  });
+
+  document.addEventListener('click', function(event) {
+    if (!dropdown.contains(event.target) && dropdown.classList.contains('show')) {
+      dropdown.classList.remove('show');
+    }
+  });
+});
+
+// Llamar a la función para cargar y agregar el contenido adicional
+cargarContenidoExtra();

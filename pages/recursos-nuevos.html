@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../styles/estilos.css" />
     <link rel="stylesheet" href="../styles/estilos-recursos.css">
   </head>
-  <body>
+  <body >
     <nav class="navbar">
       <div class="navbar-container">
           <div class="logo-title">
@@ -29,6 +29,7 @@
                   </button>
                   <div class="dropdown" id="dropdown">
                     <!-- Contenido cargado dinámicamente aquí -->
+                    
                   </div>
               </li>
               <li><a href="../index.html#contacto">Contacto</a></li>
@@ -36,19 +37,72 @@
       </div>
   </nav>
     <div class="espaciado"></div>
-    <main>
+    <main class="main-nuevo">
         <div class="box-titulo-recurso">
             <h2 class="titulo-recurso">Recursos Nuevos</h2>
         </div>
         <section class="formulario-seccion">
-          <div></div>
           <div class="formulario">
-            <h4 class="formulario-titulo">¿Tienes algún recurso que quieras sumar?
+            <h3 class="formulario-titulo">¿Tienes algún recurso que quieras sumar?
               <br><span class="formulario-subtitulo">Completa los siguientes campos</span>
-            </h4>
-            
+            </h3>
+            <form action="prueba.php" method="post" class="contenido-formulario">
+              <div>
+                <div class="div-cat">
+                  <label for="nombre" class="colocar_nombre">Nombre <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text"  id="nombre" required="obligatorio" placeholder="Escribe el nombre del recurso">
+                </div>
+                <div class="div-cat">
+                  <label for="descripcion" class="descripcion">Descripción<span class="obligatorio">*</span></label>
+                  <textarea id="descripcion" name="text" rows="3" cols="30" placeholder="Escribe una descripcion sobre el recurso." required ></textarea>
+                </div>
+                <div class="div-cat">
+                  <label for="link">Link<span class="obligatorio">*</span></label>
+                  <input type="url" id="link" required placeholder="Ingrese el link del recurso." >
+                </div>
+                <div>
+                  <span class="checkbox-categoria">Elija al menos una categoría del recurso<span class="obligatorio">*</span></span>
+                  <span id="cb_validation"></span>
+                  
+                  <div class="div-cat" >
+                    <label >
+                      <input  type="checkbox" name="opciones[]" value="Programación"/>
+                      <span class="cat-box ">Programación</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" name="opciones[]" value="Cursos" />
+                      <span class="cat-box">Cursos</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" name="opciones[]" value="Matematica" />
+                      <span class="cat-box">Matematica</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" name="opciones[]" value="Física" />
+                      <span class="cat-box">Física</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" name="opciones[]" value="I-A" />
+                      <span class="cat-box">Inteligencia Artificial</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" name="opciones[]" value="Libros" />
+                      <span class="cat-box">Libros</span>
+                    </label class="cat-box">
+                    <label>
+                      <input type="checkbox" name="opciones[]" value="Otra" />
+                      <span class="cat-box">Otra</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="div-cat">
+                  <label for="categoria-extra" >Categoría a sumar</label>
+                  <textarea id="categoria-extra" name="text" rows="3" cols="30" placeholder="Si crees que puede ir otra categoría, agreguela aca separados con ';'" ></textarea>
+                </div>
+              <input id="submit" type="submit" value="Enviar"  class="enviar"/>
+            </form>
           </div>
-          <div></div>
         </section>
     </main>
     
@@ -69,6 +123,7 @@
       </div>
     </footer>
     <script src="../scripts/menu_pages.js"></script>
+    <script src="../scripts/checkbox.js"></script>
   </body>
 </html>
 
