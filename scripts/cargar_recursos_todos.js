@@ -30,40 +30,8 @@ async function cargarTodos() {
                 return;
             }
 
-            // Crear el contenedor de la categoría
-            const divCategoria = document.createElement('div');
-            divCategoria.classList.add('car-categoria');
-            divCategoria.setAttribute('id', `categoria-${categoria.nombre}`);
-            divCategoria.setAttribute('data-fondo', categoria.fondo); // Guardar la URL del fondo en un atributo de datos
-
-            // Agregar el título y enlace
-            divCategoria.innerHTML = `<h2><a href="${categoria.link_page}" target="_blank">${categoria.nombre}</a></h2>`;
-            
-            // Crear el contenedor para los recursos
-            const divTrack = document.createElement('div');
-            divTrack.classList.add('track');
-            divCategoria.appendChild(divTrack);
-
-            
-            container.appendChild(divCategoria);
-        });
-
-        // Crear e insertar tarjetas de recursos
-        recursosData.forEach((resource) => {
-            const card = createCard(resource, categoriasMap);
-            resource.categorias.forEach(categoria => {
-                // Excluir recursos en las categorías "Todos" y "Nuevo Recurso"
-                if (categoria === "Todos" || categoria === "Nuevo Recurso") {
-                    return;
-                }
-                const categoriaContainer = document.getElementById(`categoria-${categoria}`);
-                if (categoriaContainer) {
-                    const trackContainer = categoriaContainer.querySelector('.track');
-                    if (trackContainer) {
-                        trackContainer.appendChild(card);
-                    }
-                }
-            });
+            const section = crearSeccionCategoria(categoria, recursosData, categoriasMap);
+            container.appendChild(section);
         });
 
         // Aplicar imágenes de fondo a través de ::before
@@ -74,10 +42,34 @@ async function cargarTodos() {
             }
         });
 
-       
     } catch (error) {
-        console.error('Error:', error);
+        console.error('Error:', error.message);
     }
+}
+
+function crearSeccionCategoria(categoria, recursosData, categoriasMap) {
+    const divCategoria = document.createElement('div');
+    divCategoria.classList.add('car-categoria');
+    divCategoria.setAttribute('id', `categoria-${categoria.nombre}`);
+    divCategoria.setAttribute('data-fondo', categoria.fondo); // Guardar la URL del fondo en un atributo de datos
+
+    // Agregar el título y enlace
+    divCategoria.innerHTML = `<h2><a href="${categoria.link_page}" target="_blank">${categoria.nombre}</a></h2>`;
+    
+    // Crear el contenedor para los recursos
+    const divTrack = document.createElement('div');
+    divTrack.classList.add('track');
+    divCategoria.appendChild(divTrack);
+
+    // Insertar los recursos en la lista
+    recursosData.forEach(resource => {
+        if (resource.categorias.includes(categoria.nombre)) {
+            const card = createCard(resource, categoriasMap);
+            divTrack.appendChild(card);
+        }
+    });
+
+    return divCategoria;
 }
 
 function createCard(resource, categoriasMap) {
@@ -100,10 +92,10 @@ function createCard(resource, categoriasMap) {
     divCard.innerHTML = `
         <h3 class="recurso-title car-titulo-rec">${nombre}</h3>
         <div class="recurso-descripcion car-descri">
-            <p class="descripcion">${descripcion}</p>
+            <p class="descripcion-todos">${descripcion}</p>
             <div class="spacer"></div>
             <div class="recurso-boton car-boton">
-                <a  href="${link}" target="_blank">Link</a>
+                <a href="${link}" target="_blank">Link</a>
             </div>
             <div class="categorias car-cat">
                 ${categoriasHTML}
@@ -111,7 +103,6 @@ function createCard(resource, categoriasMap) {
         </div>
     `;
 
-    // Asegúrate de agregar divCard a divCardCont
     divCardCont.appendChild(divCard);
 
     return divCardCont;
